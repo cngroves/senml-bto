@@ -3,14 +3,14 @@ docname: draft-groves-core-senml-bto-latest
 title: SenML Base Time Offset Attribute
 abbrev: SenML BTO
 date: 2016-09-09
-category: proposed standard
+category: std
 
 ipr: trust200902
 area: art
-workgroup: Core Working Group
+workgroup: CoRE Working Group
 keyword: Internet-Draft
 
-stand_alone: yes
+stand_alone: true
 pi: [toc, sortrefs, symrefs]
 
 author:
@@ -22,9 +22,10 @@ author:
 
 normative:
   RFC2119:
+  I-D.ietf-core-senml:
   
 informative:
-  I-D.ietf-core-senml:
+  
 
 
 --- abstract
@@ -142,11 +143,6 @@ IANA Considerations
 Acknowledgements
 ================
 
-
-
-
-
---- back
 
 
 
