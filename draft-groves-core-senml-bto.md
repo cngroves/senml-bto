@@ -6,7 +6,7 @@ date: 2016-09-09
 category: proposed standard
 
 ipr: trust200902
-area: ART
+area: art
 workgroup: Core Working Group
 keyword: Internet-Draft
 
@@ -22,11 +22,9 @@ author:
 
 normative:
   RFC2119:
-  I-D.ietf-core-senml:
-
+  
 informative:
-
-
+  I-D.ietf-core-senml:
 
 
 --- abstract
