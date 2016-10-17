@@ -3,7 +3,7 @@
 This is the working area for the {draft-groves-core-senml-bto} internet-draft, "SenML Base Time Offset Attribute".
 
 * [Editor's copy](https://cngroves.github.io/senml-bto/)
-* [{DRAFT_STATUS} Draft] (https://tools.ietf.org/html/draft-groves-core-senml-bto)
+* [Draft status] (https://tools.ietf.org/html/draft-groves-core-senml-bto)
 
 
 ## Building the Draft
