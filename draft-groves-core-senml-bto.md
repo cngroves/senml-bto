@@ -2,7 +2,7 @@
 title: SenML Base Time Offset Attribute
 abbrev: SenML BTO
 docname: draft-groves-core-senml-bto-latest
-date: 2016-10-17
+date: 2017-04-19
 category: std
 
 ipr: trust200902
@@ -16,12 +16,12 @@ pi: [toc, sortrefs, symrefs]
 author:
 - ins: C. Groves
   name: Christian Groves
-  organization: Huawei
+  organization: 
   street: '' 
   city: ''
   code: ''
   country: Australia
-  email: Christian.Groves@nteczone.com
+  email: cngroves.std@gmail.com
 - ins: W. Yang
   name: Weiwei Yang
   organization: Huawei
@@ -43,7 +43,7 @@ informative:
 
 SenML {{I-D.ietf-core-senml}} defines a base time attribute and time value 
 which is used to determine the time when a value is recorded. In 
-some applications a SenML package will contain a series of records 
+some applications a SenML pack will contain a series of records 
 related to a constant sample time interval, e.g. once every 60 seconds. 
 This means that the time attribute will be required for each record. 
 This document defines a new “time offset” base attribute that allows a 
@@ -54,7 +54,7 @@ sender to include the time for the sample interval between records. If the “ti
 Introduction        {#introduction}
 ============
 
-SenML currently defines the base time “bt” and time “t” attributes to indicate the time that each value in a SenML record is recorded. This means that for each record (value “v”) that a “t” attribute is required. The example from section 5.1.2/{{I-D.ietf-core-senml}} is copied below to illustrate a SenML package with multiple records.
+SenML currently defines the base time “bt” and time “t” attributes to indicate the time that each value in a SenML record is recorded. This means that for each record (value “v”) that a “t” attribute is required. The example from section 5.1.2/{{I-D.ietf-core-senml}} is copied below to illustrate a SenML pack with multiple records.
 
 ~~~~
 
@@ -74,7 +74,7 @@ SenML currently defines the base time “bt” and time “t” attributes to in
    ... 
 
 ~~~~
-{: #figmul title="SenML Package with multiple records"}
+{: #figmul title="SenML pack with multiple records"}
 
 As can be seen in the example above there is a fixed offset between the data points of 10 seconds. 
 
@@ -97,7 +97,7 @@ This document proposes a base time offset “bto” attribute that is used to in
       { "v": 21.5},
    ... 
 ~~~~
-{: #figmulbto title="SenML Package with multiple records using base time offset"}
+{: #figmulbto title="SenML pack with multiple records using base time offset"}
 
 It can be seen that it results in a record and overall pack size reduction. The receiver of the record would use the base time “bt” for the initial data point, e.g. “v”: 21.2 would have a timestamp  of 1320067464. Each subsequent record would have a time stamp equal to the previous record plus the base time offset “bto”, e.g. “v”: 21.3 would have a timestamp of 1320067474, “v”: 21.4 would have a timestamp of 1320067484, and so on.
 
@@ -256,6 +256,15 @@ Reference: This specification.
 Acknowledgements
 ================
 TBD
+
+Changelog
+=========
+
+draft-groves-core-senml-bto-01
+
+* General: Changed "SenML Package" to "SenML Pack" 
+
+
 
 
 
